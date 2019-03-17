@@ -1,0 +1,79 @@
+.index {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f1c40f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.css {
+    font-size: 100px;
+    color: #fff;
+    font-weight: 900;
+    text-shadow: -12px 12px 0px #666;
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.css::before {
+    content: attr(data-text);
+    position: absolute;
+    text-shadow: -6px 6px 0px #46FF00;
+}
+
+.c {
+    text-shadow: -12px 12px 0px #e74c3c;
+}
+
+.s {
+    text-shadow: -12px 12px 0px #3498db;
+}
+
+.description {
+    display: block;
+    padding: 0px 20px;
+    font-weight: 900;
+    background-color: #fff;
+    font-size: 30px;
+    box-shadow: -18px 18px 0 #34495e;
+    position: relative;
+    margin-top: -30px;s
+}
+
+.description::after, .description::before {
+    content: "";
+    display: block;
+    width: 251px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.description::after {
+    box-shadow: -6px 6px 0 #46FF00;
+}
+
+.description::before {
+    box-shadow: -12px 12px 0 #e74c3c;
+}
+
+@media(min-width: 768px) {
+    .css {
+        font-size: 200px;
+    }
+    .description {
+        font-size: 60px;
+        padding: 0 40px;
+    }
+    .description::after, .description::before {
+        width: 502px;
+        height: 74px;
+    }
+}
